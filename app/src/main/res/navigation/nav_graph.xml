@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.amazing.ebookapp.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.amazing.ebookapp.fragments.AdminLoginFragment"
+        android:label="fragment_login_admin"
+        tools:layout="@layout/fragment_login_admin" />
+    <fragment
+        android:id="@+id/adminFragment"
+        android:name="com.amazing.ebookapp.fragments.AdminFragment"
+        android:label="fragment_admin"
+        tools:layout="@layout/fragment_admin" >
+        <action
+            android:id="@+id/action_adminFragment_to_webViewFragment"
+            app:destination="@id/webViewFragment" />
+        <action
+            android:id="@+id/action_adminFragment_to_editBookFragment"
+            app:destination="@id/editBookFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBookFragment"
+        android:name="com.amazing.ebookapp.fragments.AddBookFragment"
+        android:label="fragment_add_book"
+        tools:layout="@layout/fragment_add_book" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/webViewFragment"
+        android:name="com.amazing.ebookapp.fragments.WebViewFragment"
+        android:label="fragment_web_view"
+        tools:layout="@layout/fragment_web_view">
+
+        <argument
+            android:name="bookItem"
+            app:argType="com.amazing.ebookapp.model.Books"
+            app:nullable="false"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/editBookFragment"
+        android:name="com.amazing.ebookapp.fragments.EditBookFragment"
+        android:label="fragment_edit_book"
+        tools:layout="@layout/fragment_edit_book">
+
+        <argument
+            android:name="editBook"
+            app:argType="com.amazing.ebookapp.model.Books"
+            app:nullable="false"/>
+
+    </fragment>
+</navigation>

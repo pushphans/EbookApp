@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "818777051683",
+    "project_id": "e-book-app-dadba",
+    "storage_bucket": "e-book-app-dadba.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818777051683:android:f40d72719440644e02d796",
+        "android_client_info": {
+          "package_name": "com.amazing.ebookapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkIZSsspURWwWBzKAHoAvgxmnYvAx8s_U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
