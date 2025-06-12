@@ -11,20 +11,32 @@
 ### 🔸 Home Screen
 <img src="screenshots/homeFragment.jpg" width="300" alt=""/>
 
+<br>
+
 ### 🔸 Search in Home
 <img src="screenshots/searchInHomeFragment.jpg" width="300" alt=""/>
+
+<br>
 
 ### 🔸 Navigation Drawer
 <img src="screenshots/adminPanelInNavigationDrawer.jpg" width="300" alt=""/>
 
+<br>
+
 ### 🔸 Admin Login
 <img src="screenshots/AdminLogin.jpg" width="300" alt=""/>
+
+<br>
 
 ### 🔸 Add Book
 <img src="screenshots/addBookFragment.jpg" width="300" alt=""/>
 
+<br>
+
 ### 🔸 Edit Book
 <img src="screenshots/editBookFragment.jpg" width="300" alt=""/>
+
+<br>
 
 ### 🔸 Delete Book Dialog
 <img src="screenshots/BookEditOrDeleteDialogInAdminFragment.jpg" width="300" alt=""/>
