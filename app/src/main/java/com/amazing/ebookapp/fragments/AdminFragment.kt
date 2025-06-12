@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.activity.addCallback
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
@@ -43,6 +44,11 @@ class AdminFragment : Fragment(R.layout.fragment_admin) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         dataViewModel.getBooks()
+
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner){
+            findNavController().popBackStack(R.id.homeFragment, false)
+        }
+
 
         dataAdapter = DataAdapter(onClick ={ onClick ->
             val action = AdminFragmentDirections.actionAdminFragmentToWebViewFragment(onClick)
