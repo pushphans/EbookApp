@@ -157,7 +157,7 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
     override fun onResume() {
         super.onResume()
 
-        (activity as MainActivity).toolbarTitle.text = "Home Fragment"
+        (activity as MainActivity).toolbarTitle.text = "Home"
     }
 
     override fun onDestroyView() {
